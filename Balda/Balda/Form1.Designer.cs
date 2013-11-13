@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lsFirstPlayer = new System.Windows.Forms.ListBox();
+            this.lsSecondPlayer = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.StatusStrip();
             this.console = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lsFirstPlayer = new System.Windows.Forms.ListBox();
-            this.lsSecondPlayer = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.играToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.новаяИграToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,14 +58,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LimeGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LimeGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(106, 3);
             this.dataGridView1.Name = "dataGridView1";
@@ -84,6 +84,22 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(522, 252);
             this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // lsFirstPlayer
+            // 
+            this.lsFirstPlayer.FormattingEnabled = true;
+            this.lsFirstPlayer.Location = new System.Drawing.Point(3, 3);
+            this.lsFirstPlayer.Name = "lsFirstPlayer";
+            this.lsFirstPlayer.Size = new System.Drawing.Size(97, 251);
+            this.lsFirstPlayer.TabIndex = 4;
+            // 
+            // lsSecondPlayer
+            // 
+            this.lsSecondPlayer.FormattingEnabled = true;
+            this.lsSecondPlayer.Location = new System.Drawing.Point(413, 3);
+            this.lsSecondPlayer.Name = "lsSecondPlayer";
+            this.lsSecondPlayer.Size = new System.Drawing.Size(103, 251);
+            this.lsSecondPlayer.TabIndex = 5;
             // 
             // button1
             // 
@@ -126,24 +142,7 @@
             // console
             // 
             this.console.Name = "console";
-            this.console.Size = new System.Drawing.Size(48, 17);
-            this.console.Text = "console";
-            // 
-            // lsFirstPlayer
-            // 
-            this.lsFirstPlayer.FormattingEnabled = true;
-            this.lsFirstPlayer.Location = new System.Drawing.Point(3, 3);
-            this.lsFirstPlayer.Name = "lsFirstPlayer";
-            this.lsFirstPlayer.Size = new System.Drawing.Size(97, 251);
-            this.lsFirstPlayer.TabIndex = 4;
-            // 
-            // lsSecondPlayer
-            // 
-            this.lsSecondPlayer.FormattingEnabled = true;
-            this.lsSecondPlayer.Location = new System.Drawing.Point(413, 3);
-            this.lsSecondPlayer.Name = "lsSecondPlayer";
-            this.lsSecondPlayer.Size = new System.Drawing.Size(103, 251);
-            this.lsSecondPlayer.TabIndex = 5;
+            this.console.Size = new System.Drawing.Size(0, 17);
             // 
             // menuStrip1
             // 
@@ -168,14 +167,14 @@
             // новаяИграToolStripMenuItem
             // 
             this.новаяИграToolStripMenuItem.Name = "новаяИграToolStripMenuItem";
-            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.новаяИграToolStripMenuItem.Text = "Новая игра";
             this.новаяИграToolStripMenuItem.Click += new System.EventHandler(this.новаяИграToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
             // помощьToolStripMenuItem
@@ -189,7 +188,7 @@
             // оПрограмеToolStripMenuItem
             // 
             this.оПрограмеToolStripMenuItem.Name = "оПрограмеToolStripMenuItem";
-            this.оПрограмеToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.оПрограмеToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.оПрограмеToolStripMenuItem.Text = "О програме";
             // 
             // Form1

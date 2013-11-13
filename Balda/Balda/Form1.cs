@@ -97,6 +97,7 @@ namespace Balda
             }
             for (int i = 0; i < r.Length; i++)
                 dataGridView1.Rows[5].Cells[1 + i].Value = r[i];
+            console.Text = "Ход первого игрока.";
         }
     }
 }
