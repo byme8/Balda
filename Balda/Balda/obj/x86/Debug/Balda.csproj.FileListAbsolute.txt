@@ -1,0 +1,7 @@
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\bin\Debug\Balda.exe
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\bin\Debug\Balda.pdb
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\obj\x86\Debug\Balda.Form1.resources
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\obj\x86\Debug\Balda.Properties.Resources.resources
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\obj\x86\Debug\Balda.csproj.GenerateResource.Cache
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\obj\x86\Debug\Balda.exe
+C:\Users\byme\Documents\GitHub\Balda\Balda\Balda\obj\x86\Debug\Balda.pdb
